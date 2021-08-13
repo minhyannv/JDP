@@ -178,7 +178,7 @@ enum Singleton07 {
 - 定义：简单工厂模式是属于创建型模式，是工厂模式的一种。简单工厂模式是由一个工厂对象决定创建出哪一种产品类的实例。简单工厂模式是工厂模式家族中最简单实用的模式。
 - 实例：有披萨，汉堡包，鸡腿三种食物，将创建的具体食物对象封装到一个工厂类中，由这个类来封装实例化对象。
 - 类图
-![simple_factory](https://static01.imgkr.com/temp/a24e0f0ed8e3423c860c3a4e174d0e41.png)
+![simple_factory](https://github.com/wmy96/JDP/blob/main/pictures/simple_factory.png)
 
 - 代码
 ```java
