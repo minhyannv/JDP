@@ -1,14 +1,34 @@
 # Java 设计模式
-## 设计模式分类：设计模式分为三种类型，共23种
-
+## 设计模式分类
+设计模式分为三种类型，共23种
 ### 创建型模式
-**单例模式**、**工厂模式**、**抽象工厂模式**、**原型模式**、建造者模式
+- **单例模式**
+- **工厂模式**
+- **抽象工厂模式**
+- **原型模式**
+- 建造者模式
 
 ### 结构型模式
-**适配器模式**、**装饰器模式**、**外观模式**、**代理模式**、桥接模式、装组合模式、享元模式
+- **适配器模式**
+- **装饰器模式**
+- **外观模式**
+- **代理模式**
+- 桥接模式
+- 装组合模式
+- 享元模式
 
 ### 行为型模式
-**策略模式**、**观察者模式**、**责任链模式**、**状态模式**、**命令模式**、**模版方法模式**、访问者模式、迭代器模式、中介者模式、备忘录模式、解释器模式
+- **策略模式**
+- **观察者模式**
+- **责任链模式**
+- **状态模式**
+- **命令模式**
+- **模版方法模式**
+- 访问者模式
+- 迭代器模式
+- 中介者模式
+- 备忘录模式
+- 解释器模式
 
 ## 需要掌握的设计模式
 ### 创建型模式
@@ -270,7 +290,7 @@ public class TestSimpleFactory {
 - 和简单工厂模式对比：和简单工厂模式中工厂负责生产所有产品相比，工厂方法模式将生成具体产品的任务分发给具体的产品工厂。
 - 类图：
 
-![factory_method](https://static01.imgkr.com/temp/1b78c1f1c35540e3bb20f67e11be40e9.png)
+![factory_method](https://github.com/wmy96/JDP/blob/main/pictures/factory_method.png)
 
 - 代码：
 
@@ -376,7 +396,7 @@ public class TestFactoryMethod {
 4. 抽象工厂模式
 - 定义：抽象工厂模式通过在AbstarctFactory中增加创建产品的接口，并在具体子工厂中实现新加产品的创建。
 - 类图：
-![abstract_factory](https://static01.imgkr.com/temp/5ddc6551ec2044d08cbc22b244e7f95b.png)
+![abstract_factory](https://github.com/wmy96/JDP/blob/main/pictures/abstract_factory.png)
 
 - 代码：
 ```java
@@ -523,7 +543,7 @@ class TestAbstractFactory {
 
 - 类图：
 
-![class_adapter](https://static01.imgkr.com/temp/c0ceb43d07384569b4ff207d40ac6c5c.png)
+![class_adapter](https://github.com/wmy96/JDP/blob/main/pictures/class_adapter.png)
 
 - 代码：
 
@@ -595,7 +615,7 @@ public class TestClassAdapter {
 - 实例：手机充电需要将220V的交流电转化为手机锂电池需要的5V直流电。使用电源适配器，将 AC220v ——> DC5V。
 - 类图：
 
-![object_adapter](https://static01.imgkr.com/temp/8bcd858b11f24a1d909fe98e400b32ff.png)
+![object_adapter](https://github.com/wmy96/JDP/blob/main/pictures/object_adapter.png)
 
 - 代码：
 
@@ -673,7 +693,7 @@ public class TestObjectAdapter {
 - 实例：接口是万能适配器，有多种方法，而我们只关注5V的适配，使用抽象类为每个方法提供默认实现，然后使用子类只重写输出5V电流的方法。
 - 类图
 
-![interface_adapter](https://static01.imgkr.com/temp/7c6eec1b60e54286ae970ebe2a857665.png)
+![interface_adapter](https://github.com/wmy96/JDP/blob/main/pictures/interface_adapter.png)
 
 - 代码：
 
@@ -787,7 +807,7 @@ public class TestInterfaceAdapter {
 - 实例：为星巴兹咖啡连锁店设计饮料菜单，咖啡可加的调料有豆浆、牛奶、摩卡等。可在咖啡的基础上加入不同的调料，星巴兹会根据所加的调料收取不同的费用，要注意到，以后可能有新的调料被加入进来供顾客选择。并且本店现有DarkRoast（深焙）、HouseBlend（综合）、Decaf（低咖啡因）及Espresso（浓咖啡）四种类型的咖啡，而且以后可能会添加新的咖啡种类。使用装饰者模式，四种咖啡为具体组件，调料为具体装饰者。
 - 类图：
 
-![decorator__pattern](https://static01.imgkr.com/temp/4b55b3a19a2645f6b2f49a49723372d9.png)
+![decorator__pattern](https://github.com/wmy96/JDP/blob/main/pictures/decorator__pattern.png)
 
 - 代码：
 
@@ -991,7 +1011,7 @@ public class TestDecorator {
 
 - 类图：
 
-![facade_pattern](https://static01.imgkr.com/temp/90429c97db4d4dfdb8e17297386d088e.png)
+![facade_pattern](https://github.com/wmy96/JDP/blob/main/pictures/facade_pattern.png)
 
 - 代码：
 
@@ -1241,7 +1261,7 @@ public class TestFacade {
 
 - 类图：
 
-![static_proxy](https://static01.imgkr.com/temp/8fd8cbb0bd3540a18e9a32bbf807f746.png)
+![static_proxy](https://github.com/wmy96/JDP/blob/main/pictures/static_proxy.png)
 
 - 代码：
 
@@ -1323,7 +1343,7 @@ public class TestStaticProxy {
 
 - 类图：
 
-![dynamic_proxy](https://static01.imgkr.com/temp/216071d595584078a58c7e53feb6cf34.png)
+![dynamic_proxy](https://github.com/wmy96/JDP/blob/main/pictures/dynamic_proxy.png)
 
 - 代码：
 
@@ -1421,7 +1441,7 @@ public class TestDynamicProxy {
 - 实例：以cglib的方式进行具体类的代理。
 - 类图：
 
-![cglib_proxy](https://static01.imgkr.com/temp/d495b720df414209a67422f035c894a5.png)
+![cglib_proxy](https://github.com/wmy96/JDP/blob/main/pictures/cglib_proxy.png)
 
 - 代码：（需要引入CGLIB第三方库）
 
@@ -1513,7 +1533,7 @@ public class TestCglibProxy {
 
 - 类图：
 
-![strategy_pattern](https://static01.imgkr.com/temp/62d9353c621d42f5b8efe0fd67ab994b.png)
+![strategy_pattern](https://github.com/wmy96/JDP/blob/main/pictures/strategy_pattern.png)
 
 - 代码：
 
@@ -1709,7 +1729,7 @@ public class TestStrategy {
 
 - 类图：
 
-![observer_pattern](https://static01.imgkr.com/temp/909db12def304d1cb9630104f84b565b.png)
+![observer_pattern](https://github.com/wmy96/JDP/blob/main/pictures/observer_pattern.png)
 
 - 代码：
 
@@ -1889,7 +1909,7 @@ public class TestObserver {
 
 - 类图：
 
-![chain_of_responsibility](https://static01.imgkr.com/temp/b92bc38908944790be079187490055de.png)
+![chain_of_responsibility](https://github.com/wmy96/JDP/blob/main/pictures/chain_of_responsibility.png)
 
 - 代码：
 
@@ -2066,7 +2086,7 @@ public class TestChainOfResponsibility {
 
 - 类图：
 
-![state](https://static01.imgkr.com/temp/133b9dff53fd48cbbaa47716504f918e.png)
+![state](https://github.com/wmy96/JDP/blob/main/pictures/state_pattern.png)
 
 - 代码：
 
@@ -2190,7 +2210,7 @@ public class TestState {
 
 - 类图：
 
-![command_pattern](https://static01.imgkr.com/temp/8d83301c362546ee85e9fb7b1e3f568d.png)
+![command_pattern](https://github.com/wmy96/JDP/blob/main/pictures/command_pattern.png)
 
 - 代码：
 
@@ -2345,7 +2365,7 @@ public class TestCommand {
 - 实例：创建一个定义操作的 *Game* 抽象类，其中，模板方法设置为 final，这样它就不会被重写。*Cricket* 和 *Football* 是扩展了 *Game* 的实体类，它们重写了抽象类的方法。
 - 类图：
 
-![template_pattern](https://static01.imgkr.com/temp/a0ce353a1a1343b5bfa20c1f72c4f726.png)
+![template_pattern](https://github.com/wmy96/JDP/blob/main/pictures/template_pattern.png)
 
 - 代码：
 
