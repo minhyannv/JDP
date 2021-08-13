@@ -178,7 +178,7 @@ enum Singleton07 {
 - 定义：简单工厂模式是属于创建型模式，是工厂模式的一种。简单工厂模式是由一个工厂对象决定创建出哪一种产品类的实例。简单工厂模式是工厂模式家族中最简单实用的模式。
 - 实例：有披萨，汉堡包，鸡腿三种食物，将创建的具体食物对象封装到一个工厂类中，由这个类来封装实例化对象。
 - 类图
-![simple_factory](E:\IdeaProjects\java-learning\img\simple_factory.png)
+![simple_factory](https://static01.imgkr.com/temp/a24e0f0ed8e3423c860c3a4e174d0e41.png)
 
 - 代码
 ```java
@@ -270,7 +270,7 @@ public class TestSimpleFactory {
 - 和简单工厂模式对比：和简单工厂模式中工厂负责生产所有产品相比，工厂方法模式将生成具体产品的任务分发给具体的产品工厂。
 - 类图：
 
-![factory_method](E:\IdeaProjects\java-learning\img\factory_method.png)
+![factory_method](https://static01.imgkr.com/temp/1b78c1f1c35540e3bb20f67e11be40e9.png)
 
 - 代码：
 
@@ -376,7 +376,7 @@ public class TestFactoryMethod {
 4. 抽象工厂模式
 - 定义：抽象工厂模式通过在AbstarctFactory中增加创建产品的接口，并在具体子工厂中实现新加产品的创建。
 - 类图：
-![abstract_factory](E:\IdeaProjects\java-learning\img\abstract_factory.png)
+![abstract_factory](https://static01.imgkr.com/temp/5ddc6551ec2044d08cbc22b244e7f95b.png)
 
 - 代码：
 ```java
@@ -523,7 +523,7 @@ class TestAbstractFactory {
 
 - 类图：
 
-![class_adapter](E:\IdeaProjects\java-learning\img\class_adapter.png)
+![class_adapter](https://static01.imgkr.com/temp/c0ceb43d07384569b4ff207d40ac6c5c.png)
 
 - 代码：
 
@@ -595,7 +595,7 @@ public class TestClassAdapter {
 - 实例：手机充电需要将220V的交流电转化为手机锂电池需要的5V直流电。使用电源适配器，将 AC220v ——> DC5V。
 - 类图：
 
-![object_adapter](E:\IdeaProjects\java-learning\img\object_adapter.png)
+![object_adapter](https://static01.imgkr.com/temp/8bcd858b11f24a1d909fe98e400b32ff.png)
 
 - 代码：
 
@@ -673,7 +673,7 @@ public class TestObjectAdapter {
 - 实例：接口是万能适配器，有多种方法，而我们只关注5V的适配，使用抽象类为每个方法提供默认实现，然后使用子类只重写输出5V电流的方法。
 - 类图
 
-![interface_adapter](E:\IdeaProjects\java-learning\img\interface_adapter.png)
+![interface_adapter](https://static01.imgkr.com/temp/7c6eec1b60e54286ae970ebe2a857665.png)
 
 - 代码：
 
@@ -787,7 +787,7 @@ public class TestInterfaceAdapter {
 - 实例：为星巴兹咖啡连锁店设计饮料菜单，咖啡可加的调料有豆浆、牛奶、摩卡等。可在咖啡的基础上加入不同的调料，星巴兹会根据所加的调料收取不同的费用，要注意到，以后可能有新的调料被加入进来供顾客选择。并且本店现有DarkRoast（深焙）、HouseBlend（综合）、Decaf（低咖啡因）及Espresso（浓咖啡）四种类型的咖啡，而且以后可能会添加新的咖啡种类。使用装饰者模式，四种咖啡为具体组件，调料为具体装饰者。
 - 类图：
 
-![decorator__pattern](E:\IdeaProjects\java-learning\img\decorator__pattern.png)
+![decorator__pattern](https://static01.imgkr.com/temp/4b55b3a19a2645f6b2f49a49723372d9.png)
 
 - 代码：
 
@@ -991,7 +991,7 @@ public class TestDecorator {
 
 - 类图：
 
-![facade_pattern](E:\IdeaProjects\java-learning\img\facade_pattern.png)
+![facade_pattern](https://static01.imgkr.com/temp/90429c97db4d4dfdb8e17297386d088e.png)
 
 - 代码：
 
@@ -1241,7 +1241,7 @@ public class TestFacade {
 
 - 类图：
 
-![static_proxy](E:\IdeaProjects\java-learning\img\static_proxy.png)
+![static_proxy](https://static01.imgkr.com/temp/8fd8cbb0bd3540a18e9a32bbf807f746.png)
 
 - 代码：
 
@@ -1323,7 +1323,7 @@ public class TestStaticProxy {
 
 - 类图：
 
-![dynamic_proxy](E:\IdeaProjects\java-learning\img\dynamic_proxy.png)
+![dynamic_proxy](https://static01.imgkr.com/temp/216071d595584078a58c7e53feb6cf34.png)
 
 - 代码：
 
@@ -1421,7 +1421,7 @@ public class TestDynamicProxy {
 - 实例：以cglib的方式进行具体类的代理。
 - 类图：
 
-![cglib_proxy](E:\IdeaProjects\java-learning\img\cglib_proxy.png)
+![cglib_proxy](https://static01.imgkr.com/temp/d495b720df414209a67422f035c894a5.png)
 
 - 代码：（需要引入CGLIB第三方库）
 
@@ -1513,7 +1513,7 @@ public class TestCglibProxy {
 
 - 类图：
 
-![strategy_pattern](E:\IdeaProjects\java-learning\img\strategy_pattern.png)
+![strategy_pattern](https://static01.imgkr.com/temp/62d9353c621d42f5b8efe0fd67ab994b.png)
 
 - 代码：
 
@@ -1709,7 +1709,7 @@ public class TestStrategy {
 
 - 类图：
 
-![observer_pattern](E:\IdeaProjects\java-learning\img\observer_pattern.png)
+![observer_pattern](https://static01.imgkr.com/temp/909db12def304d1cb9630104f84b565b.png)
 
 - 代码：
 
@@ -1889,7 +1889,7 @@ public class TestObserver {
 
 - 类图：
 
-![chain_of_responsibility](E:\IdeaProjects\java-learning\img\chain_of_responsibility.png)
+![chain_of_responsibility](https://static01.imgkr.com/temp/b92bc38908944790be079187490055de.png)
 
 - 代码：
 
@@ -2066,7 +2066,7 @@ public class TestChainOfResponsibility {
 
 - 类图：
 
-![state](E:\IdeaProjects\java-learning\img\state_pattern.png)
+![state](https://static01.imgkr.com/temp/133b9dff53fd48cbbaa47716504f918e.png)
 
 - 代码：
 
@@ -2190,7 +2190,7 @@ public class TestState {
 
 - 类图：
 
-![command_pattern](E:\IdeaProjects\java-learning\img\command_pattern.png)
+![command_pattern](https://static01.imgkr.com/temp/8d83301c362546ee85e9fb7b1e3f568d.png)
 
 - 代码：
 
@@ -2345,7 +2345,7 @@ public class TestCommand {
 - 实例：创建一个定义操作的 *Game* 抽象类，其中，模板方法设置为 final，这样它就不会被重写。*Cricket* 和 *Football* 是扩展了 *Game* 的实体类，它们重写了抽象类的方法。
 - 类图：
 
-![template_pattern](E:\IdeaProjects\java-learning\img\template_pattern.png)
+![template_pattern](https://static01.imgkr.com/temp/a0ce353a1a1343b5bfa20c1f72c4f726.png)
 
 - 代码：
 
