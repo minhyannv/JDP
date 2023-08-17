@@ -1,4 +1,4 @@
-# Java 设计模式
+# Java 设计模式 Java Design Pattern（JDP）
 ## 设计模式分类
 设计模式分为三种类型，共23种
 ### 创建型模式
